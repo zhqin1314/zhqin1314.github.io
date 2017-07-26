@@ -321,7 +321,8 @@
       
         
           
-            <h1 id="测试文章"><a href="#测试文章" class="headerlink" title="测试文章"></a>测试文章</h1><p>上传新文章</p>
+            <h1 id="测试文章">测试文章</h1>
+<p>上传新文章</p>
 <p>2017年4月26日</p>
 <p>that’s all.</p>
 <p>就是这样的。</p>
@@ -437,70 +438,148 @@
         
           
             <a id="more"></a>
-<h1 id="相量与综合矢量"><a href="#相量与综合矢量" class="headerlink" title="相量与综合矢量"></a>相量与综合矢量</h1><p>电路系统中，<font color="#0099ff"><strong>相量</strong></font>和<font color="#0099ff"><strong>综合矢量</strong></font>的引入都是为了简化电路计算或者控制。然而相量、综合矢量是两个截然不同的概念，它们各有其特定的适用范围，概念不清很容易导致使用混乱。</p>
-<ol>
-<li><p>相量（Phaser）：</p>
+<h1 id="相量与综合矢量">相量与综合矢量</h1>
+<p>电路系统中，<font color="#0099ff"><strong>相量</strong></font>和<font color="#0099ff"><strong>综合矢量</strong></font>的引入都是为了简化电路计算或者控制。然而相量、综合矢量是两个截然不同的概念，它们各有其特定的适用范围，概念不清很容易导致使用混乱。</p>
+<ol style="list-style-type: decimal">
+<li>相量（Phaser）：</li>
+</ol>
 <ul>
-<li><p>用一个称为相量的复数表示<strong>正弦量</strong>，相量由正弦量的振幅$I$(有效值)和初相$\varphi$构成，复数的模表示正弦量的振幅，其幅角表示初相：$i=\sqrt{2}I\cos(\omega t+\varphi)=\mathrm{Re}(\sqrt{2}I\mathrm{e}^{\mathrm{j}(\omega t+\varphi)})=\mathrm{Re}(\sqrt{2}\dot{I}\mathrm{e}^{\mathrm{j}\omega t}) \iff \dot{I}=I\mathrm{e}^{\mathrm{j}\varphi}$</p>
-</li>
-<li><p>分析正弦稳态的有效方法，将描述正弦稳态电路的微分（积分）方程变换成复数代数方程，从而简化了电路的分析和计算：$\frac{\mathrm{d}i}{\mathrm{d}t} \iff \mathrm{j}\omega\dot{I}=I\mathrm{e}^{\mathrm{j}(\varphi+\frac{\pi}{2})}$ ，$\int i\,\mathrm{d}t \iff  \frac{\dot{I}}{\mathrm{j}\omega}=\frac{I}{\omega}\mathrm{e}^{\text{j}(\varphi-\frac{\pi}{2})}$ </p>
-</li>
+<li><p>用一个称为相量的复数表示<strong>正弦量</strong>，相量由正弦量的振幅<span class="math inline">\(I\)</span>(有效值)和初相<span class="math inline">\(\varphi\)</span>构成，复数的模表示正弦量的振幅，其幅角表示初相：<span class="math inline">\(i=\sqrt{2}I\cos(\omega t+\varphi)=\mathrm{Re}(\sqrt{2}I\mathrm{e}^{\mathrm{j}(\omega t+\varphi)})=\mathrm{Re}(\sqrt{2}\dot{I}\mathrm{e}^{\mathrm{j}\omega t}) \iff \dot{I}=I\mathrm{e}^{\mathrm{j}\varphi}\)</span></p></li>
+<li><p>分析正弦稳态的有效方法，将描述正弦稳态电路的微分（积分）方程变换成复数代数方程，从而简化了电路的分析和计算：<span class="math inline">\(\frac{\mathrm{d}i}{\mathrm{d}t} \iff \mathrm{j}\omega\dot{I}=I\mathrm{e}^{\mathrm{j}(\varphi+\frac{\pi}{2})}\)</span> ，<span class="math inline">\(\int i\,\mathrm{d}t \iff \frac{\dot{I}}{\mathrm{j}\omega}=\frac{I}{\omega}\mathrm{e}^{\text{j}(\varphi-\frac{\pi}{2})}\)</span></p></li>
 <li><p>在多相电路系统中，相量只能逐相地描述各单相电路量，多相电路量须用多个不同的相量来描述。</p>
 <p>​</p>
-<center><img src="../img/双馈电机等效/DFIG_坐标变换t0.gif" style="zoom:50%"></center>
-
-<center><img src="../img/双馈电机等效/DFIG_坐标变换3.gif" style="zoom:50%"></center>
-
-<center>图1  DFIG_坐标变换</center>
-
-<center><img src="http://op0u1jywe.bkt.clouddn.com/%E5%8F%8C%E9%A6%88%E7%94%B5%E6%9C%BA%E7%AD%89%E6%95%88/DFIG_%E5%9D%90%E6%A0%87%E5%8F%98%E6%8D%A23.gif" style="zoom:50%"></center>
-
+<center>
+<img src="../img/双馈电机等效/DFIG_坐标变换t0.gif" style="zoom:50%">
+</center>
+<center>
+<img src="../img/双馈电机等效/DFIG_坐标变换3.gif" style="zoom:50%">
+</center>
+<center>
+图1 DFIG_坐标变换
+</center>
+<center>
+<img src="http://op0u1jywe.bkt.clouddn.com/%E5%8F%8C%E9%A6%88%E7%94%B5%E6%9C%BA%E7%AD%89%E6%95%88/DFIG_%E5%9D%90%E6%A0%87%E5%8F%98%E6%8D%A23.gif" style="zoom:50%">
+</center>
 <p>​</p>
-<p>​</p>
-</li>
+<p>​</p></li>
 </ul>
-</li>
+<ol start="2" style="list-style-type: decimal">
+<li>综合矢量<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>：</li>
 </ol>
-<ol>
-<li><p>综合矢量[^1]：</p>
 <ul>
-<li><p>三相对称绕组中通以三相对称电压（电流）时，可以在三相绕组所在平面合成一个以电角速度$\omega$ 、沿相序方向旋转的幅值不变电压矢量（电流矢量），这个矢量就是综合电压矢量，也称作空间电压矢量；</p>
-</li>
+<li><p>三相对称绕组中通以三相对称电压（电流）时，可以在三相绕组所在平面合成一个以电角速度<span class="math inline">\(\omega\)</span> 、沿相序方向旋转的幅值不变电压矢量（电流矢量），这个矢量就是综合电压矢量，也称作空间电压矢量；</p></li>
 <li><p>坐标变换</p>
-<p>​<br>$$<br>\begin{array}{l}<br>U^{abc}_s\implies<br> \begin{cases}<br>u_s^a=U_s\cos{(\omega_s t+\psi_s)}   \<br>u_s^b=U_s\cos{\left(\omega_s t+\psi_s-\frac{2\pi}{3}\right)}   \<br>u_s^c=U_s\cos{\left(\omega_s t+\psi_s-\frac{4\pi}{3}\right)}   \<br>\end{cases}\<br>\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\Downarrow\<br>U^{\alpha\beta}_s\implies<br>\begin{cases}<br>u_s^\alpha=U_s\cos{(\omega_s t+\psi_s)}\<br>u_s^\beta=U_s\cos{(\omega_s t+\psi_s-\frac{\pi}{2})}=U_s\sin{(\omega_s t+\psi_s)}<br>\end{cases}\<br>\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\Downarrow\<br>U^{dq}_s\implies<br>\begin{cases}<br>u_s^d=U_s\cos{0}=U_s\<br>u_s^q=U_s\cos{(0-\frac{\pi}{2})}=0<br>\end{cases}<br>\end{array}<br>$$</p>
-<p>$$<br>\begin{array}{l}<br>U^{abc}_r\implies<br> \begin{cases}<br>u_r^a=U_r\cos{(\omega_r t+\psi_r)}   \<br>u_r^b=U_r\cos{\left(\omega_r t+\psi_r-\frac{2\pi}{3}\right)}   \<br>u_r^c=U_r\cos{\left(\omega_r t+\psi_r-\frac{4\pi}{3}\right)}   \<br>\end{cases}\<br>\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\Downarrow\<br>U_r^{\alpha\beta}\implies<br>\begin{cases}<br>u_r^\alpha=U_r\cos{(\omega_r t+\psi_r)}\<br>u_r^\beta=U_r\cos{(\omega_r t+\psi_r-\frac{\pi}{2})}=U_r\sin{(\omega_r t+\psi_r)}<br>\end{cases}\<br>\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\Downarrow\<br>U_r^{dq}\implies<br>\begin{cases}<br>u_r^d=U_r\cos{\psi_0}\<br>u_r^q=U_r\cos{(\psi_0-\frac{\pi}{2})}=U_r\sin\psi_0<br>\end{cases}<br>\end{array}<br>$$</p>
-<p>​<br>$$<br>\begin{array}{}<br>\vec{U_s}&amp;=\frac{2}{3}(u_s^a+u_s^b\mathrm{e}^{\mathrm{j}\frac{2\pi}{3}}+u_s^c\mathrm{e}^{\mathrm{j}\frac{4\pi}{3}})  \<br>&amp;=u_s^\alpha+u_s^\beta\text{e}^{\mathrm{j}\frac{\pi}{2}}\<br>&amp;=u_s^\alpha+u_s^\beta(\cos{\frac{\pi}{2}}+\text{j}\sin{\frac{\pi}{2}})\<br>&amp;=u_s^\alpha+\text{j}u_s^\beta\<br>&amp;=U_s\left(\cos{(\omega_s t+\psi_s)}+\text{j}\cos{(\omega_s t+\psi_s-\frac{\pi}{2})}\right)\<br>&amp;=U_s\left(\cos{(\omega_s t+\psi_s)}+\text{j}\sin{(\omega_s t+\psi_s)}\right)\<br>&amp;=U_s\text{e}^{\text{j}(\omega_s t+\psi_s)}<br>\end{array}<br>$$</p>
-<p> 若$\psi_0$为转子初始角，即转子电压矢量与同步旋转坐标系d轴之间的夹角；$\psi_r$ 为转子a相电压初始相角<br>$$<br>\begin{array}{}<br>\vec{U_r}&amp;=\frac{2}{3}\text{e}^{\text{j}\psi_0}(u_r^a+u_r^b\mathrm{e}^{\mathrm{j}\frac{2\pi}{3}}+u_r^c\mathrm{e}^{\mathrm{j}\frac{4\pi}{3}})  \<br>&amp;=\text{e}^{\text{j}\psi_0}\left(u_r^\alpha+u_r^\beta\text{e}^{\mathrm{j}\frac{\pi}{2}}\right)\<br>&amp;=\text{e}^{\text{j}\psi_0}\left(u_r^\alpha+u_r^\beta(\cos{\frac{\pi}{2}}+\text{j}\sin{\frac{\pi}{2}}\right)\<br>&amp;=\text{e}^{\text{j}\psi_0}\left(u_r^\alpha+\text{j}u_r^\beta\right)\<br>&amp;=U_r\text{e}^{\text{j}\psi_0}\left(\cos{(\omega_r t+\psi_r)}+\text{j}\cos{(\omega_r t+\psi_r-\frac{\pi}{2})}\right)\<br>&amp;=U_r\text{e}^{\text{j}\psi_0}\left(\cos{(\omega_r t+\psi_r)}+\text{j}\sin{(\omega_r t+\psi_r)}\right)\<br>&amp;=U_r\text{e}^{\text{j}\psi_0}\text{e}^{\text{j}(\omega_r t+\psi<em>r)}<br>\end{array}<br>$$<br>​<br>$$<br>u</em>{dq}=u_{\alpha\beta}\text{e}^{-\text{j}(\omega t+\psi)}<br>$$</p>
+<p>​ <span class="math display">\[
+ \begin{array}{l}
+ U^{abc}_s\implies
+  \begin{cases}
+ u_s^a=U_s\cos{(\omega_s t+\psi_s)}   \\
+ u_s^b=U_s\cos{\left(\omega_s t+\psi_s-\frac{2\pi}{3}\right)}   \\
+ u_s^c=U_s\cos{\left(\omega_s t+\psi_s-\frac{4\pi}{3}\right)}   \\
+ \end{cases}\\
+ \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\Downarrow\\
+ U^{\alpha\beta}_s\implies
+ \begin{cases}
+ u_s^\alpha=U_s\cos{(\omega_s t+\psi_s)}\\
+ u_s^\beta=U_s\cos{(\omega_s t+\psi_s-\frac{\pi}{2})}=U_s\sin{(\omega_s t+\psi_s)}
+ \end{cases}\\
+ \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\Downarrow\\
+ U^{dq}_s\implies
+ \begin{cases}
+ u_s^d=U_s\cos{0}=U_s\\
+ u_s^q=U_s\cos{(0-\frac{\pi}{2})}=0
+ \end{cases}
+ \end{array}
+ \]</span></p>
+<p><span class="math display">\[
+ \begin{array}{l}
+ U^{abc}_r\implies
+  \begin{cases}
+ u_r^a=U_r\cos{(\omega_r t+\psi_r)}   \\
+ u_r^b=U_r\cos{\left(\omega_r t+\psi_r-\frac{2\pi}{3}\right)}   \\
+ u_r^c=U_r\cos{\left(\omega_r t+\psi_r-\frac{4\pi}{3}\right)}   \\
+ \end{cases}\\
+ \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\Downarrow\\
+ U_r^{\alpha\beta}\implies
+ \begin{cases}
+ u_r^\alpha=U_r\cos{(\omega_r t+\psi_r)}\\
+ u_r^\beta=U_r\cos{(\omega_r t+\psi_r-\frac{\pi}{2})}=U_r\sin{(\omega_r t+\psi_r)}
+ \end{cases}\\
+ \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\Downarrow\\
+ U_r^{dq}\implies
+ \begin{cases}
+ u_r^d=U_r\cos{\psi_0}\\
+ u_r^q=U_r\cos{(\psi_0-\frac{\pi}{2})}=U_r\sin\psi_0
+ \end{cases}
+ \end{array}
+ \]</span></p>
+<p>​ <span class="math display">\[
+ \begin{array}{}
+ \vec{U_s}&amp;=\frac{2}{3}(u_s^a+u_s^b\mathrm{e}^{\mathrm{j}\frac{2\pi}{3}}+u_s^c\mathrm{e}^{\mathrm{j}\frac{4\pi}{3}})  \\
+ &amp;=u_s^\alpha+u_s^\beta\text{e}^{\mathrm{j}\frac{\pi}{2}}\\
+ &amp;=u_s^\alpha+u_s^\beta(\cos{\frac{\pi}{2}}+\text{j}\sin{\frac{\pi}{2}})\\
+ &amp;=u_s^\alpha+\text{j}u_s^\beta\\
+ &amp;=U_s\left(\cos{(\omega_s t+\psi_s)}+\text{j}\cos{(\omega_s t+\psi_s-\frac{\pi}{2})}\right)\\
+ &amp;=U_s\left(\cos{(\omega_s t+\psi_s)}+\text{j}\sin{(\omega_s t+\psi_s)}\right)\\
+ &amp;=U_s\text{e}^{\text{j}(\omega_s t+\psi_s)}
+ \end{array}
+ \]</span></p>
+<p>若<span class="math inline">\(\psi_0\)</span>为转子初始角，即转子电压矢量与同步旋转坐标系d轴之间的夹角；<span class="math inline">\(\psi_r\)</span> 为转子a相电压初始相角 <span class="math display">\[
+ \begin{array}{}
+ \vec{U_r}&amp;=\frac{2}{3}\text{e}^{\text{j}\psi_0}(u_r^a+u_r^b\mathrm{e}^{\mathrm{j}\frac{2\pi}{3}}+u_r^c\mathrm{e}^{\mathrm{j}\frac{4\pi}{3}})  \\
+ &amp;=\text{e}^{\text{j}\psi_0}\left(u_r^\alpha+u_r^\beta\text{e}^{\mathrm{j}\frac{\pi}{2}}\right)\\
+ &amp;=\text{e}^{\text{j}\psi_0}\left(u_r^\alpha+u_r^\beta(\cos{\frac{\pi}{2}}+\text{j}\sin{\frac{\pi}{2}}\right)\\
+ &amp;=\text{e}^{\text{j}\psi_0}\left(u_r^\alpha+\text{j}u_r^\beta\right)\\
+ &amp;=U_r\text{e}^{\text{j}\psi_0}\left(\cos{(\omega_r t+\psi_r)}+\text{j}\cos{(\omega_r t+\psi_r-\frac{\pi}{2})}\right)\\
+ &amp;=U_r\text{e}^{\text{j}\psi_0}\left(\cos{(\omega_r t+\psi_r)}+\text{j}\sin{(\omega_r t+\psi_r)}\right)\\
+ &amp;=U_r\text{e}^{\text{j}\psi_0}\text{e}^{\text{j}(\omega_r t+\psi_r)}
+ \end{array}
+ \]</span> ​ <span class="math display">\[
+ u_{dq}=u_{\alpha\beta}\text{e}^{-\text{j}(\omega t+\psi)}
+ \]</span></p>
 <p>​</p>
 <p>​</p>
 <p>​</p>
-<p>​</p>
-</li>
-<li><p>综合矢量在三绕组上的投影即是三相电压（电流）的瞬时值；</p>
-</li>
+<p>​</p></li>
+<li><p>综合矢量在三绕组上的投影即是三相电压（电流）的瞬时值；</p></li>
 </ul>
-</li>
-</ol>
-<h1 id="双馈电机数学模型"><a href="#双馈电机数学模型" class="headerlink" title="双馈电机数学模型"></a>双馈电机数学模型</h1><p>建立双馈电机数学模型之前，</p>
-<ol>
+<h1 id="双馈电机数学模型">双馈电机数学模型</h1>
+<p>建立双馈电机数学模型之前，</p>
+<ol style="list-style-type: decimal">
 <li>双馈电机等效电路（转子折算到定子侧）</li>
 </ol>
 <p>​</p>
-<ol>
-<li><p>参考坐标系选择</p>
-<p>建立双馈电机数学模型，<strong>需要注意坐标系的统一</strong>，定转子电压、磁链方程必须必须建立在同一坐标系下，定转子方程才能相互关联。双馈电机中的6个坐标系：        </p>
-<ul>
-<li>定子坐标系：定子三相坐标系$(abc)_s$、<strong>定子两相静止坐标系$(\alpha\beta)_s$</strong> 、<strong>定子两相旋转坐标系$(dq)_s$</strong> ；</li>
-<li>转子坐标系：转子三相坐标系$(abc)_r$ 、转子两相静止坐标系$(\alpha\beta)_r$ 、<strong>转子两相旋转坐标系$(dq)_r$</strong> ；</li>
-</ul>
-<p>其中，$(abc)_s$ 与$(\alpha\beta)_s$ 相对静止，$(dq)_s$ 相对$(\alpha\beta)_s$ 以速度$\omega_s$ 旋转；$(abc)_r$ 与$(\alpha\beta)_r$ 相对静止，$(dq)_r$ 相对$(\alpha\beta)_r$ 以速度$\omega_r$ 旋转；$(\alpha\beta)_r$ 相对$(\alpha\beta)_s$ 以速度$\omega_m=\omega_s-\omega_r$ 旋转。</p>
-<p>$\omega_s$ 是定子电压电流角频率，$\omega_r$ 为转子电压电流角频率，$\omega_m$ 为转子电旋转速度。</p>
-</li>
+<ol start="2" style="list-style-type: decimal">
+<li>参考坐标系选择</li>
 </ol>
-<p>电压方程：<br>$$<br>\begin{cases}<br>\boldsymbol{v}^s_{s}=R_s\boldsymbol{i}_s^s+\frac{\mathrm{d}\boldsymbol{\psi}<em>s^s}{\mathrm{d}t}   \<br>\boldsymbol{v}^r</em>{r}=R_r\boldsymbol{i}_r^r+\frac{\mathrm{d}\boldsymbol{\psi}_r^r}{\mathrm{d}t}<br>\end{cases}<br>$$</p>
-<p>磁链方程：<br>$$<br>\begin{cases}<br>\boldsymbol{\psi}^s_{s}=L_s\boldsymbol{i}_s^s+L_m\boldsymbol{i}_r^s  \<br>\boldsymbol{\psi}_r^r=L_m\boldsymbol{i}_s^r+L_r\boldsymbol{i} _r^r<br>\end{cases}<br>$$</p>
-<p>其中，$\boldsymbol{v}_s^s$为定子电压矢量；$\boldsymbol{i}_s^s$为定子电流矢量；$\boldsymbol{\psi}_s^s$为定子磁链矢量<br>$$<br>\left(\frac{1}{\frac{2}{\frac{1}{3}}+\sqrt{2}}\right)<br>$$</p>
-<p>[^1]: 卓忠疆, 邱培基, 任义友. 综合矢量法在旋转电机坐标变换中的应用── 兼论电磁减速式同步电动机起动的一些问题[J]. 福州大学学报, 1980, 1: 001.</p>
+<p>建立双馈电机数学模型，<strong>需要注意坐标系的统一</strong>，定转子电压、磁链方程必须必须建立在同一坐标系下，定转子方程才能相互关联。双馈电机中的6个坐标系：</p>
+<ul>
+<li>定子坐标系：定子三相坐标系<span class="math inline">\((abc)_s\)</span>、<strong>定子两相静止坐标系<span class="math inline">\((\alpha\beta)_s\)</span></strong> 、<strong>定子两相旋转坐标系<span class="math inline">\((dq)_s\)</span></strong> ；</li>
+<li>转子坐标系：转子三相坐标系<span class="math inline">\((abc)_r\)</span> 、转子两相静止坐标系<span class="math inline">\((\alpha\beta)_r\)</span> 、<strong>转子两相旋转坐标系<span class="math inline">\((dq)_r\)</span></strong> ；</li>
+</ul>
+<p>其中，<span class="math inline">\((abc)_s\)</span> 与<span class="math inline">\((\alpha\beta)_s\)</span> 相对静止，<span class="math inline">\((dq)_s\)</span> 相对<span class="math inline">\((\alpha\beta)_s\)</span> 以速度<span class="math inline">\(\omega_s\)</span> 旋转；<span class="math inline">\((abc)_r\)</span> 与<span class="math inline">\((\alpha\beta)_r\)</span> 相对静止，<span class="math inline">\((dq)_r\)</span> 相对<span class="math inline">\((\alpha\beta)_r\)</span> 以速度<span class="math inline">\(\omega_r\)</span> 旋转；<span class="math inline">\((\alpha\beta)_r\)</span> 相对<span class="math inline">\((\alpha\beta)_s\)</span> 以速度<span class="math inline">\(\omega_m=\omega_s-\omega_r\)</span> 旋转。</p>
+<p><span class="math inline">\(\omega_s\)</span> 是定子电压电流角频率，<span class="math inline">\(\omega_r\)</span> 为转子电压电流角频率，<span class="math inline">\(\omega_m\)</span> 为转子电旋转速度。</p>
+<p>电压方程： <span class="math display">\[
+\begin{cases}
+\boldsymbol{v}^s_{s}=R_s\boldsymbol{i}_s^s+\frac{\mathrm{d}\boldsymbol{\psi}_s^s}{\mathrm{d}t}   \\
+\boldsymbol{v}^r_{r}=R_r\boldsymbol{i}_r^r+\frac{\mathrm{d}\boldsymbol{\psi}_r^r}{\mathrm{d}t}   
+\end{cases}
+\]</span></p>
+<p>磁链方程： <span class="math display">\[
+\begin{cases}
+\boldsymbol{\psi}^s_{s}=L_s\boldsymbol{i}_s^s+L_m\boldsymbol{i}_r^s  \\
+\boldsymbol{\psi}_r^r=L_m\boldsymbol{i}_s^r+L_r\boldsymbol{i} _r^r  
+\end{cases}
+\]</span></p>
+<p>其中，<span class="math inline">\(\boldsymbol{v}_s^s\)</span>为定子电压矢量；<span class="math inline">\(\boldsymbol{i}_s^s\)</span>为定子电流矢量；<span class="math inline">\(\boldsymbol{\psi}_s^s\)</span>为定子磁链矢量 <span class="math display">\[
+\left(\frac{1}{\frac{2}{\frac{1}{3}}+\sqrt{2}}\right)
+\]</span></p>
+<div class="footnotes">
+<hr>
+<ol>
+<li id="fn1"><p>卓忠疆, 邱培基, 任义友. 综合矢量法在旋转电机坐标变换中的应用── 兼论电磁减速式同步电动机起动的一些问题[J]. 福州大学学报, 1980, 1: 001.<a href="#fnref1">↩</a></p></li>
+</ol>
+</div>
 
           
         
