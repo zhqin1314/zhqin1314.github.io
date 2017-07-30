@@ -238,11 +238,12 @@ var _hmt = _hmt || [];
 <!-- mathjax config similar to math.stackexchange -->
 
 <script type="text/x-mathjax-config">
-                    MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"],scale: 90, linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50), },
-                    tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
-                     TeX: {  equationNumbers: {autoNumber: ["AMS"], useLabelIds: true},noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, Macros: { href: "{}",beq:"\\begin{eqnarray}",eeq:"\\end{equation}",sln:"{\\mathfrak{sl}}",h:"{\\mathfrak{h}}",g:"{\\mathfrak{g}}",gl:"{\\mathfrak{gl}}",la:"\\lambda",La:"\\Lambda",mc:"\\mathcal",m:"\\mathrm",mf:"\\mathbf",lle:"\\leqslant",gge:"\\geqslant",mb:"\\mathbb",N:"{\\mathbb{N}}",Z:"{\\mathbb{Z}}",ch:"{\\mathrm{ch}}",R:"{\\mathbb{R}}",C:"{\\mathbb{C}}",vp:"{\\varphi}",e:"{\\epsilon}" } },
-                                        messageStyle: "none"
-                }); 
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
 </script>
 
 <script type="text/x-mathjax-config">
@@ -264,6 +265,7 @@ var _hmt = _hmt || [];
 
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
+
 
 
 <!-- MathJax End -->
