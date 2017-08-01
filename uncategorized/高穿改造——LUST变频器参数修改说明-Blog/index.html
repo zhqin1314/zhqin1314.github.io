@@ -1,0 +1,563 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+  
+    <title>高穿改造——LUST变频器参数修改说明 | zhqin1314的个人博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="章勤">
+    
+
+    
+    <meta name="description" content="高穿改造——LUST变频器参数修改说明1 PITCHmanager 软件安装、连接设置 PITCHmanager LUST 后台软件安装： 1)  系统要求：Windows xp、Win7  32位（SP1）； 2)  点击安装包PITCHmanager_Fitter_Setup_V1.0.7.1.exe，默认安装即可： ​       PITCHmanager 与LUST变频器连接： 1)  用">
+<meta name="keywords">
+<meta property="og:type" content="article">
+<meta property="og:title" content="高穿改造——LUST变频器参数修改说明">
+<meta property="og:url" content="http://yoursite.com/uncategorized/高穿改造——LUST变频器参数修改说明-Blog/index.html">
+<meta property="og:site_name" content="zhqin1314的个人博客">
+<meta property="og:description" content="高穿改造——LUST变频器参数修改说明1 PITCHmanager 软件安装、连接设置 PITCHmanager LUST 后台软件安装： 1)  系统要求：Windows xp、Win7  32位（SP1）； 2)  点击安装包PITCHmanager_Fitter_Setup_V1.0.7.1.exe，默认安装即可： ​       PITCHmanager 与LUST变频器连接： 1)  用">
+<meta property="og:image" content="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E/30_%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85.png">
+<meta property="og:image" content="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\35_网线连接.png">
+<meta property="og:image" content="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\31_本地连接-属性.png">
+<meta property="og:image" content="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\33_IP设置1.png">
+<meta property="og:image" content="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\36_连接变频器.png">
+<meta property="og:image" content="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\2_Parametereditor.png">
+<meta property="og:image" content="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\3_Save device setting to file.png">
+<meta property="og:image" content="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\4_保存至桌面.png">
+<meta property="og:image" content="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\5_点击OK.png">
+<meta property="og:image" content="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\6_参数读取中.bmp">
+<meta property="og:image" content="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\7_参数读取完毕.bmp">
+<meta property="og:image" content="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\20_打开参数文件.png">
+<meta property="og:image" content="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\23_修改参数MON_BrcPnom.png">
+<meta property="og:image" content="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\22_修改参数MON_BrcQmax.png">
+<meta property="og:image" content="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\8_Load device setting from file.png">
+<meta property="og:image" content="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\9_选择修改后的参数文件.png">
+<meta property="og:image" content="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\10_默认设置_OK.png">
+<meta property="og:image" content="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\11_参数下载中.png">
+<meta property="og:image" content="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\12_参数下载完毕.bmp">
+<meta property="og:updated_time" content="2017-08-01T08:57:42.236Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="高穿改造——LUST变频器参数修改说明">
+<meta name="twitter:description" content="高穿改造——LUST变频器参数修改说明1 PITCHmanager 软件安装、连接设置 PITCHmanager LUST 后台软件安装： 1)  系统要求：Windows xp、Win7  32位（SP1）； 2)  点击安装包PITCHmanager_Fitter_Setup_V1.0.7.1.exe，默认安装即可： ​       PITCHmanager 与LUST变频器连接： 1)  用">
+<meta name="twitter:image" content="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E/30_%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85.png">
+
+    
+    <link rel="alternative" href="/atom.xml" title="zhqin1314的个人博客" type="application/atom+xml">
+    
+    
+    
+    <link rel="stylesheet" href="/css/style.css"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</head>
+
+  <body>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><header>
+      
+<div>
+		
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="zhqin1314的个人博客">zhqin1314的个人博客</a></h1>
+				<h2 class="blog-motto">学习、分享、成长</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">archive</a></li>
+					
+						<li><a href="/categories">category</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/uncategorized/高穿改造——LUST变频器参数修改说明-Blog/" title="高穿改造——LUST变频器参数修改说明" itemprop="url">高穿改造——LUST变频器参数修改说明</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="章勤" target="_blank" itemprop="author">章勤</a>
+		
+  <p class="article-time">
+    <time datetime="2017-08-01T08:55:36.796Z" itemprop="datePublished"> 发表于 2017-08-01</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#高穿改造——LUST变频器参数修改说明"><span class="toc-number">1.</span> <span class="toc-text">高穿改造——LUST变频器参数修改说明</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-PITCHmanager-软件安装、连接设置"><span class="toc-number">1.1.</span> <span class="toc-text">1 PITCHmanager 软件安装、连接设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-参数文件读取"><span class="toc-number">1.2.</span> <span class="toc-text">2 参数文件读取</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-参数修改"><span class="toc-number">1.3.</span> <span class="toc-text">3 参数修改</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-参数文件下载"><span class="toc-number">1.4.</span> <span class="toc-text">4 参数文件下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-验证"><span class="toc-number">1.5.</span> <span class="toc-text">5 验证</span></a></li></ol></li></ol>
+		
+		</div>
+		
+		<h1 id="高穿改造——LUST变频器参数修改说明"><a href="#高穿改造——LUST变频器参数修改说明" class="headerlink" title="高穿改造——LUST变频器参数修改说明"></a>高穿改造——LUST变频器参数修改说明</h1><h2 id="1-PITCHmanager-软件安装、连接设置"><a href="#1-PITCHmanager-软件安装、连接设置" class="headerlink" title="1 PITCHmanager 软件安装、连接设置"></a>1 <code>PITCHmanager</code> 软件安装、连接设置</h2><ol>
+<li><p><code>PITCHmanager</code> LUST 后台软件安装：</p>
+<p>1)  系统要求：Windows xp、Win7  32位（SP1）；</p>
+<p>2)  点击安装包<code>PITCHmanager_Fitter_Setup_V1.0.7.1.exe</code>，默认安装即可：</p>
+<p>​     <img src="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E/30_%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85.png" style="zoom:50%"></p>
+</li>
+<li><p><code>PITCHmanager</code> 与LUST变频器连接：</p>
+<p>1)  用网线连接 LUST 变频器和电脑；   </p>
+<p>​     <img src="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\35_网线连接.png" style="zoom:12%"></p>
+<p>2)  设置电脑本地连接 <code>IP</code> 地址，以 Win7 系统为例：</p>
+<p>   a. <code>控制面板</code> — <code>网络和Internet</code> — <code>网络和共享中心</code> — <code>更改适配器设置</code> — <code>本地连接</code> ；</p>
+<p>   b. 打开本地连接属性对话框：鼠标右键 <code>本地连接</code> — <code>属性</code> ；</p>
+<p>​        <img src="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\31_本地连接-属性.png" style="zoom:100%"></p>
+<p>   c.  双击 <code>Internet 协议版本 4 (TCP/IPv4)</code> ，将 <code>IP</code> 地址修改为<code>192.168.39.100</code> ：</p>
+<p>​        <img src="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\33_IP设置1.png" style="zoom:45%"></p>
+<p>​    d.  打开 <code>PITCHmanager</code> ，点击<code>Connect...</code> 即可成功连接 LUST 变频器；</p>
+<p>​         <img src="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\36_连接变频器.png" style="zoom:35%"></p>
+</li>
+</ol>
+<h2 id="2-参数文件读取"><a href="#2-参数文件读取" class="headerlink" title="2 参数文件读取"></a>2 参数文件读取</h2><p>首先从变频器中将参数文件读取出来，具体步骤如下：</p>
+<ol>
+<li><p>打开 <code>PITCHmanager</code>，与变频器连接后在屏幕上方找到 <code>Parametereditor</code>，如下图所示：</p>
+<p><img src="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\2_Parametereditor.png" alt="图1"></p>
+</li>
+<li><p>在 <code>Parametereditor</code> 界面中，打开 <code>Save device setting to file</code>：</p>
+<p> <img src="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\3_Save device setting to file.png" style="zoom:80%"></p>
+</li>
+<li><p>选择保存路径— <code>保存</code> — <code>OK</code> ：</p>
+<p> <img src="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\4_保存至桌面.png" style="zoom:55%"></p>
+<p> <img src="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\5_点击OK.png" style="zoom:65%"></p>
+</li>
+<li><p>参数读取中：</p>
+<p><img src="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\6_参数读取中.bmp" style="zoom:100%"></p>
+</li>
+<li><p>参数读取完毕，<code>Close</code> 关闭对话框：</p>
+<p><img src="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\7_参数读取完毕.bmp" style="zoom:100%"></p>
+</li>
+</ol>
+<h2 id="3-参数修改"><a href="#3-参数修改" class="headerlink" title="3 参数修改"></a>3 参数修改</h2><p>接下来修改参数文件中的两个参数：</p>
+<ol>
+<li><p>用 txt 文档编辑器打开参数文件，具体方法为：</p>
+<p>新建一个 txt 文档并打开，然后将参数文件拖入 txt 文档编辑器中；</p>
+<p> <img src="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\20_打开参数文件.png" style="zoom:60%"></p>
+</li>
+<li><p>修改参数 <code>MON_BrcPnom</code>，txt 编辑器中<code>Ctrl + F</code>查找<code>MON_BrcPnom</code>，其默认值为<code>0.2</code>，将其修改为<code>1.2</code>；</p>
+<p> <img src="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\23_修改参数MON_BrcPnom.png" style="zoom:65%"></p>
+</li>
+<li><p>修改参数 <code>MON_BrcQmax</code>，txt 编辑器中<code>Ctrl + F</code>查找<code>MON_BrcQmax</code>，其默认值为<code>10</code>，将其修改为<code>60</code>；</p>
+<p> <img src="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\22_修改参数MON_BrcQmax.png" style="zoom:65%"></p>
+</li>
+<li><p>修改完后一定记得保存： <code>Ctrl + s</code> ；</p>
+</li>
+</ol>
+<h2 id="4-参数文件下载"><a href="#4-参数文件下载" class="headerlink" title="4 参数文件下载"></a>4 参数文件下载</h2><p>下面将修改后的参数文件下载到LUST变频器中：</p>
+<ol>
+<li><p>在 <code>Parametereditor</code> 界面中打开 <code>Load device setting from file</code>：</p>
+<p> <img src="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\8_Load device setting from file.png" style="zoom:80%"></p>
+</li>
+<li><p>选择修改后的参数文件：</p>
+<p> <img src="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\9_选择修改后的参数文件.png" style="zoom:40%"></p>
+</li>
+<li><p>默认设置，点击 OK 开始参数下载：</p>
+<p> <img src="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\10_默认设置_OK.png" style="zoom:40%"></p>
+</li>
+<li><p>参数下载中：</p>
+<p> <img src="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\11_参数下载中.png" style="zoom:80%"></p>
+</li>
+<li><p>参数下载完毕，Close 关闭对话框：</p>
+<p> <img src="http://op0u1jywe.bkt.clouddn.com/LUST%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E\12_参数下载完毕.bmp" style="zoom:80%"></p>
+</li>
+</ol>
+<h2 id="5-验证"><a href="#5-验证" class="headerlink" title="5 验证"></a>5 验证</h2><p>待参数下载成功后，为了保证参数文件已经修改成功，可以重复步骤2，即将参数文件重新读出，然后检查步骤3中修改过的两个参数值是否正确。</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/uncategorized/高穿改造——LUST变频器参数修改说明-Blog/" data-title="高穿改造——LUST变频器参数修改说明 | zhqin1314的个人博客" data-tsina="null" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/control/双馈电机等效0420/" title="双馈电机等效">
+  <strong>上一篇：</strong><br/>
+  <span>
+  双馈电机等效</span>
+</a>
+</div>
+
+
+</nav>
+
+	
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#高穿改造——LUST变频器参数修改说明"><span class="toc-number">1.</span> <span class="toc-text">高穿改造——LUST变频器参数修改说明</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-PITCHmanager-软件安装、连接设置"><span class="toc-number">1.1.</span> <span class="toc-text">1 PITCHmanager 软件安装、连接设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-参数文件读取"><span class="toc-number">1.2.</span> <span class="toc-text">2 参数文件读取</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-参数修改"><span class="toc-number">1.3.</span> <span class="toc-text">3 参数修改</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-参数文件下载"><span class="toc-number">1.4.</span> <span class="toc-text">4 参数文件下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-验证"><span class="toc-number">1.5.</span> <span class="toc-text">5 验证</span></a></li></ol></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/control/" title="control">control<sup>1</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://stormzhang.com/" target="_blank" title="stormzhang">stormzhang</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://wuchong.me" target="_blank" title="Jark">Jark</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	
+	<section class="info">
+		<p> 大家好，我是章勤。 <br/>
+			Just do it! Everything is possible！</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		
+		<a href="https://github.com/https://github.com/zhqin1314" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<a href="mailto:zhgqin1314@163.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2017 
+		
+		<a href="/about" target="_blank" title="章勤">章勤</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ],
+      processEscapes: true
+    },
+	TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+    "HTML-CSS": {linebreaks: {automatic: true}},
+	SVG: {linebreaks: {automatic: true}}
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End --><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+
+  </body>
+</html>
