@@ -20,7 +20,7 @@
 <meta property="og:description" content="电路系统中......">
 <meta property="og:image" content="http://op0u1jywe.bkt.clouddn.com/%E5%8F%8C%E9%A6%88%E7%94%B5%E6%9C%BA%E7%AD%89%E6%95%88/DFIG_%E5%9D%90%E6%A0%87%E5%8F%98%E6%8D%A2t0.gif">
 <meta property="og:image" content="http://op0u1jywe.bkt.clouddn.com/%E5%8F%8C%E9%A6%88%E7%94%B5%E6%9C%BA%E7%AD%89%E6%95%88/DFIG_%E5%9D%90%E6%A0%87%E5%8F%98%E6%8D%A23.gif">
-<meta property="og:updated_time" content="2017-08-02T12:52:24.809Z">
+<meta property="og:updated_time" content="2017-08-02T13:13:19.558Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="双馈电机等效">
 <meta name="twitter:description" content="电路系统中......">
@@ -101,7 +101,7 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#相量与综合矢量"><span class="toc-number">1.</span> <span class="toc-text">相量与综合矢量</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#相量（Phaser）："><span class="toc-number">1.1.</span> <span class="toc-text">相量（Phaser）：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#综合矢量-1-："><span class="toc-number">1.2.</span> <span class="toc-text">综合矢量[^1]：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#双馈电机数学模型"><span class="toc-number">2.</span> <span class="toc-text">双馈电机数学模型</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#相量与综合矢量"><span class="toc-number">1.</span> <span class="toc-text">相量与综合矢量</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#相量（Phaser）："><span class="toc-number">1.1.</span> <span class="toc-text">相量（Phaser）：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#综合矢量-1-："><span class="toc-number">1.2.</span> <span class="toc-text">综合矢量[^1]：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#双馈电机数学模型"><span class="toc-number">2.</span> <span class="toc-text">双馈电机数学模型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#双馈电机等效电路（转子折算到定子侧）"><span class="toc-number">2.1.</span> <span class="toc-text">双馈电机等效电路（转子折算到定子侧）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考坐标系选择"><span class="toc-number">2.2.</span> <span class="toc-text">参考坐标系选择</span></a></li></ol></li></ol>
 		
 		</div>
 		
@@ -180,20 +180,13 @@ u_r^q=U_r\cos{(\psi_0-\frac{\pi}{2})}=U_r\sin\psi_0
 \end{array}$$</span><!-- Has MathJax -->
 <p><center><span>$u_{dq}=u_{\alpha\beta}\text{e}^{-\text{j}(\omega t+\psi)}$</span><!-- Has MathJax --></center><br>$$<br>u_{dq}=u_{\alpha\beta}\text{e}^{-\text{j}(\omega t+\psi)}<br>$$<br>综合矢量在三绕组上的投影即是三相电压（电流）的瞬时值；</p>
 <h1 id="双馈电机数学模型"><a href="#双馈电机数学模型" class="headerlink" title="双馈电机数学模型"></a>双馈电机数学模型</h1><p>建立双馈电机数学模型之前，</p>
-<ol>
-<li>双馈电机等效电路（转子折算到定子侧）</li>
-</ol>
-<ol>
-<li><p>参考坐标系选择</p>
-<p>建立双馈电机数学模型，<strong>需要注意坐标系的统一</strong>，定转子电压、磁链方程必须必须建立在同一坐标系下，定转子方程才能相互关联。双馈电机中的6个坐标系：        </p>
+<h2 id="双馈电机等效电路（转子折算到定子侧）"><a href="#双馈电机等效电路（转子折算到定子侧）" class="headerlink" title="双馈电机等效电路（转子折算到定子侧）"></a>双馈电机等效电路（转子折算到定子侧）</h2><h2 id="参考坐标系选择"><a href="#参考坐标系选择" class="headerlink" title="参考坐标系选择"></a>参考坐标系选择</h2><p>建立双馈电机数学模型，<strong>需要注意坐标系的统一</strong>，定转子电压、磁链方程必须必须建立在同一坐标系下，定转子方程才能相互关联。双馈电机中的6个坐标系：        </p>
 <ul>
 <li>定子坐标系：定子三相坐标系$(abc)_s$、<strong>定子两相静止坐标系$(\alpha\beta)_s$</strong> 、<strong>定子两相旋转坐标系$(dq)_s$</strong> ；</li>
 <li>转子坐标系：转子三相坐标系$(abc)_r$ 、转子两相静止坐标系$(\alpha\beta)_r$ 、<strong>转子两相旋转坐标系$(dq)_r$</strong> ；</li>
 </ul>
 <p>其中，$(abc)_s$ 与$(\alpha\beta)_s$ 相对静止，$(dq)_s$ 相对$(\alpha\beta)_s$ 以速度$\omega_s$ 旋转；$(abc)_r$ 与$(\alpha\beta)_r$ 相对静止，$(dq)_r$ 相对$(\alpha\beta)_r$ 以速度$\omega_r$ 旋转；$(\alpha\beta)_r$ 相对$(\alpha\beta)_s$ 以速度$\omega_m=\omega_s-\omega_r$ 旋转。</p>
 <p>$\omega_s$ 是定子电压电流角频率，$\omega_r$ 为转子电压电流角频率，$\omega_m$ 为转子电旋转速度。</p>
-</li>
-</ol>
 <p>电压方程：</p>
 <span>$$\begin{cases}
 \boldsymbol{v}^s_{s}=R_s\boldsymbol{i}_s^s+\frac{\mathrm{d}\boldsymbol{\psi}_s^s}{\mathrm{d}t}   \\
@@ -256,7 +249,7 @@ u_r^q=U_r\cos{(\psi_0-\frac{\pi}{2})}=U_r\sin\psi_0
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#相量与综合矢量"><span class="toc-number">1.</span> <span class="toc-text">相量与综合矢量</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#相量（Phaser）："><span class="toc-number">1.1.</span> <span class="toc-text">相量（Phaser）：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#综合矢量-1-："><span class="toc-number">1.2.</span> <span class="toc-text">综合矢量[^1]：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#双馈电机数学模型"><span class="toc-number">2.</span> <span class="toc-text">双馈电机数学模型</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#相量与综合矢量"><span class="toc-number">1.</span> <span class="toc-text">相量与综合矢量</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#相量（Phaser）："><span class="toc-number">1.1.</span> <span class="toc-text">相量（Phaser）：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#综合矢量-1-："><span class="toc-number">1.2.</span> <span class="toc-text">综合矢量[^1]：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#双馈电机数学模型"><span class="toc-number">2.</span> <span class="toc-text">双馈电机数学模型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#双馈电机等效电路（转子折算到定子侧）"><span class="toc-number">2.1.</span> <span class="toc-text">双馈电机等效电路（转子折算到定子侧）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考坐标系选择"><span class="toc-number">2.2.</span> <span class="toc-text">参考坐标系选择</span></a></li></ol></li></ol>
  
   </div>
 
