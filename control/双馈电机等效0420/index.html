@@ -20,7 +20,7 @@
 <meta property="og:description" content="电路系统中......">
 <meta property="og:image" content="http://op0u1jywe.bkt.clouddn.com/%E5%8F%8C%E9%A6%88%E7%94%B5%E6%9C%BA%E7%AD%89%E6%95%88/DFIG_%E5%9D%90%E6%A0%87%E5%8F%98%E6%8D%A2t0.gif">
 <meta property="og:image" content="http://op0u1jywe.bkt.clouddn.com/%E5%8F%8C%E9%A6%88%E7%94%B5%E6%9C%BA%E7%AD%89%E6%95%88/DFIG_%E5%9D%90%E6%A0%87%E5%8F%98%E6%8D%A23.gif">
-<meta property="og:updated_time" content="2017-07-30T23:19:22.555Z">
+<meta property="og:updated_time" content="2017-08-02T12:36:10.472Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="双馈电机等效">
 <meta name="twitter:description" content="电路系统中......">
@@ -92,7 +92,7 @@
 		<a href="/about" title="章勤" target="_blank" itemprop="author">章勤</a>
 		
   <p class="article-time">
-    <time datetime="2017-07-27T14:57:25.472Z" itemprop="datePublished"> 发表于 2017-07-27</time>
+    <time datetime="2017-08-02T11:24:47.804Z" itemprop="datePublished"> 发表于 2017-08-02</time>
     
   </p>
 </header>
@@ -101,19 +101,14 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#相量与综合矢量"><span class="toc-number">1.</span> <span class="toc-text">相量与综合矢量</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#双馈电机数学模型"><span class="toc-number">2.</span> <span class="toc-text">双馈电机数学模型</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#相量与综合矢量"><span class="toc-number">1.</span> <span class="toc-text">相量与综合矢量</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#相量（Phaser）："><span class="toc-number">1.1.</span> <span class="toc-text">相量（Phaser）：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#综合矢量-1-："><span class="toc-number">1.2.</span> <span class="toc-text">综合矢量[^1]：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#双馈电机数学模型"><span class="toc-number">2.</span> <span class="toc-text">双馈电机数学模型</span></a></li></ol>
 		
 		</div>
 		
 		<h1 id="相量与综合矢量"><a href="#相量与综合矢量" class="headerlink" title="相量与综合矢量"></a>相量与综合矢量</h1><p>电路系统中，<font color="#0099ff"><strong>相量</strong></font>和<font color="#0099ff"><strong>综合矢量</strong></font>的引入都是为了简化电路计算或者控制。然而相量、综合矢量是两个截然不同的概念，它们各有其特定的适用范围，概念不清很容易导致使用混乱。</p>
-<ol>
-<li><p>相量（Phaser）：</p>
-<ul>
-<li><p>用一个称为相量的复数表示<strong>正弦量</strong>，相量由正弦量的振幅$I$(有效值)和初相$\varphi$构成，复数的模表示正弦量的振幅，其幅角表示初相：$i=\sqrt{2}I\cos(\omega t+\varphi)=\mathrm{Re}(\sqrt{2}I\mathrm{e}^{\mathrm{j}(\omega t+\varphi)})=\mathrm{Re}(\sqrt{2}\dot{I}\mathrm{e}^{\mathrm{j}\omega t}) \iff \dot{I}=I\mathrm{e}^{\mathrm{j}\varphi}$</p>
-</li>
-<li><p>分析正弦稳态的有效方法，将描述正弦稳态电路的微分（积分）方程变换成复数代数方程，从而简化了电路的分析和计算：$\frac{\mathrm{d}i}{\mathrm{d}t} \iff \mathrm{j}\omega\dot{I}=I\mathrm{e}^{\mathrm{j}(\varphi+\frac{\pi}{2})}$ ，$\int i\,\mathrm{d}t \iff  \frac{\dot{I}}{\mathrm{j}\omega}=\frac{I}{\omega}\mathrm{e}^{\text{j}(\varphi-\frac{\pi}{2})}$ </p>
-</li>
-<li><p>在多相电路系统中，相量只能逐相地描述各单相电路量，多相电路量须用多个不同的相量来描述。</p>
+<h2 id="相量（Phaser）："><a href="#相量（Phaser）：" class="headerlink" title="相量（Phaser）："></a>相量（Phaser）：</h2><p>用一个称为相量的复数表示<strong>正弦量</strong>，相量由正弦量的振幅$I$(有效值)和初相$\varphi$构成，复数的模表示正弦量的振幅，其幅角表示初相：$i=\sqrt{2}I\cos(\omega t+\varphi)=\mathrm{Re}(\sqrt{2}I\mathrm{e}^{\mathrm{j}(\omega t+\varphi)})=\mathrm{Re}(\sqrt{2}\dot{I}\mathrm{e}^{\mathrm{j}\omega t}) \iff \dot{I}=I\mathrm{e}^{\mathrm{j}\varphi}$</p>
+<p>分析正弦稳态的有效方法，将描述正弦稳态电路的微分（积分）方程变换成复数代数方程，从而简化了电路的分析和计算：$\frac{\mathrm{d}i}{\mathrm{d}t} \iff \mathrm{j}\omega\dot{I}=I\mathrm{e}^{\mathrm{j}(\varphi+\frac{\pi}{2})}$ ，$\int i\,\mathrm{d}t \iff  \frac{\dot{I}}{\mathrm{j}\omega}=\frac{I}{\omega}\mathrm{e}^{\text{j}(\varphi-\frac{\pi}{2})}$ </p>
+<p>在多相电路系统中，相量只能逐相地描述各单相电路量，多相电路量须用多个不同的相量来描述。</p>
 <p>​</p>
 <center><img src="http://op0u1jywe.bkt.clouddn.com/%E5%8F%8C%E9%A6%88%E7%94%B5%E6%9C%BA%E7%AD%89%E6%95%88/DFIG_%E5%9D%90%E6%A0%87%E5%8F%98%E6%8D%A2t0.gif" style="zoom:50%"></center>
 
@@ -122,17 +117,8 @@
 <center><img src="http://op0u1jywe.bkt.clouddn.com/%E5%8F%8C%E9%A6%88%E7%94%B5%E6%9C%BA%E7%AD%89%E6%95%88/DFIG_%E5%9D%90%E6%A0%87%E5%8F%98%E6%8D%A23.gif" style="zoom:50%"></center>
 
 <p>​</p>
-</li>
-</ul>
-</li>
-</ol>
-<ol>
-<li><p>综合矢量[^1]：</p>
-<ul>
-<li><p>三相对称绕组中通以三相对称电压（电流）时，可以在三相绕组所在平面合成一个以电角速度$\omega$ 、沿相序方向旋转的幅值不变电压矢量（电流矢量），这个矢量就是综合电压矢量，也称作空间电压矢量；</p>
-</li>
-<li><p>坐标变换</p>
-<p>​</p>
+<h2 id="综合矢量-1-："><a href="#综合矢量-1-：" class="headerlink" title="综合矢量[^1]："></a>综合矢量[^1]：</h2><p>三相对称绕组中通以三相对称电压（电流）时，可以在三相绕组所在平面合成一个以电角速度$\omega$ 、沿相序方向旋转的幅值不变电压矢量（电流矢量），这个矢量就是综合电压矢量，也称作空间电压矢量；</p>
+<p>坐标变换：</p>
 <span>$$\begin{array}{l}
 U^{abc}_s\implies
  \begin{cases}
@@ -174,30 +160,25 @@ u_r^q=U_r\cos{(\psi_0-\frac{\pi}{2})}=U_r\sin\psi_0
 \end{cases}
 \end{array}$$</span><!-- Has MathJax -->
 <span>$$\begin{array}{}
-     \vec{U_s}&amp;=\frac{2}{3}(u_s^a+u_s^b\mathrm{e}^{\mathrm{j}\frac{2\pi}{3}}+u_s^c\mathrm{e}^{\mathrm{j}\frac{4\pi}{3}})  \\
-     &amp;=u_s^\alpha+u_s^\beta\text{e}^{\mathrm{j}\frac{\pi}{2}}\\
-     &amp;=u_s^\alpha+u_s^\beta(\cos{\frac{\pi}{2}}+\text{j}\sin{\frac{\pi}{2}})\\
-     &amp;=u_s^\alpha+\text{j}u_s^\beta\\
-     &amp;=U_s\left(\cos{(\omega_s t+\psi_s)}+\text{j}\cos{(\omega_s t+\psi_s-\frac{\pi}{2})}\right)\\
-     &amp;=U_s\left(\cos{(\omega_s t+\psi_s)}+\text{j}\sin{(\omega_s t+\psi_s)}\right)\\
-     &amp;=U_s\text{e}^{\text{j}(\omega_s t+\psi_s)}
-     \end{array}$$</span><!-- Has MathJax -->
+\vec{U_s}&amp;=\frac{2}{3}(u_s^a+u_s^b\mathrm{e}^{\mathrm{j}\frac{2\pi}{3}}+u_s^c\mathrm{e}^{\mathrm{j}\frac{4\pi}{3}})  \\
+&amp;=u_s^\alpha+u_s^\beta\text{e}^{\mathrm{j}\frac{\pi}{2}}\\
+&amp;=u_s^\alpha+u_s^\beta(\cos{\frac{\pi}{2}}+\text{j}\sin{\frac{\pi}{2}})\\
+&amp;=u_s^\alpha+\text{j}u_s^\beta\\
+&amp;=U_s\left(\cos{(\omega_s t+\psi_s)}+\text{j}\cos{(\omega_s t+\psi_s-\frac{\pi}{2})}\right)\\
+&amp;=U_s\left(\cos{(\omega_s t+\psi_s)}+\text{j}\sin{(\omega_s t+\psi_s)}\right)\\
+&amp;=U_s\text{e}^{\text{j}(\omega_s t+\psi_s)}
+\end{array}$$</span><!-- Has MathJax -->
 <p> 若$\psi_0$为转子初始角，即转子电压矢量与同步旋转坐标系d轴之间的夹角；$\psi_r$ 为转子a相电压初始相角：</p>
 <span>$$\begin{array}{}
-     \vec{U_r}&amp;=\frac{2}{3}\text{e}^{\text{j}\psi_0}(u_r^a+u_r^b\mathrm{e}^{\mathrm{j}\frac{2\pi}{3}}+u_r^c\mathrm{e}^{\mathrm{j}\frac{4\pi}{3}})  \\
-     &amp;=\text{e}^{\text{j}\psi_0}\left(u_r^\alpha+u_r^\beta\text{e}^{\mathrm{j}\frac{\pi}{2}}\right)\\
-     &amp;=\text{e}^{\text{j}\psi_0}\left(u_r^\alpha+u_r^\beta(\cos{\frac{\pi}{2}}+\text{j}\sin{\frac{\pi}{2}}\right)\\
-     &amp;=\text{e}^{\text{j}\psi_0}\left(u_r^\alpha+\text{j}u_r^\beta\right)\\
-     &amp;=U_r\text{e}^{\text{j}\psi_0}\left(\cos{(\omega_r t+\psi_r)}+\text{j}\cos{(\omega_r t+\psi_r-\frac{\pi}{2})}\right)\\
-     &amp;=U_r\text{e}^{\text{j}\psi_0}\left(\cos{(\omega_r t+\psi_r)}+\text{j}\sin{(\omega_r t+\psi_r)}\right)\\
-     &amp;=U_r\text{e}^{\text{j}\psi_0}\text{e}^{\text{j}(\omega_r t+\psi_r)}
-     \end{array}$$</span><!-- Has MathJax -->
-<p>What happens?</p>
+\vec{U_r}&amp;=\frac{2}{3}\text{e}^{\text{j}\psi_0}(u_r^a+u_r^b\mathrm{e}^{\mathrm{j}\frac{2\pi}{3}}+u_r^c\mathrm{e}^{\mathrm{j}\frac{4\pi}{3}})  \\
+&amp;=\text{e}^{\text{j}\psi_0}\left(u_r^\alpha+u_r^\beta\text{e}^{\mathrm{j}\frac{\pi}{2}}\right)\\
+&amp;=\text{e}^{\text{j}\psi_0}\left(u_r^\alpha+u_r^\beta(\cos{\frac{\pi}{2}}+\text{j}\sin{\frac{\pi}{2}}\right)\\
+&amp;=\text{e}^{\text{j}\psi_0}\left(u_r^\alpha+\text{j}u_r^\beta\right)\\
+&amp;=U_r\text{e}^{\text{j}\psi_0}\left(\cos{(\omega_r t+\psi_r)}+\text{j}\cos{(\omega_r t+\psi_r-\frac{\pi}{2})}\right)\\
+&amp;=U_r\text{e}^{\text{j}\psi_0}\left(\cos{(\omega_r t+\psi_r)}+\text{j}\sin{(\omega_r t+\psi_r)}\right)\\
+&amp;=U_r\text{e}^{\text{j}\psi_0}\text{e}^{\text{j}(\omega_r t+\psi_r)}
+\end{array}$$</span><!-- Has MathJax -->
 <p><center><span>$u_{dq}=u_{\alpha\beta}\text{e}^{-\text{j}(\omega t+\psi)}$</span><!-- Has MathJax --></center><br>$$<br>u_{dq}=u_{\alpha\beta}\text{e}^{-\text{j}(\omega t+\psi)}<br>$$<br>综合矢量在三绕组上的投影即是三相电压（电流）的瞬时值；</p>
-</li>
-</ul>
-</li>
-</ol>
 <h1 id="双馈电机数学模型"><a href="#双馈电机数学模型" class="headerlink" title="双馈电机数学模型"></a>双馈电机数学模型</h1><p>建立双馈电机数学模型之前，</p>
 <ol>
 <li>双馈电机等效电路（转子折算到定子侧）</li>
@@ -276,7 +257,7 @@ u_r^q=U_r\cos{(\psi_0-\frac{\pi}{2})}=U_r\sin\psi_0
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#相量与综合矢量"><span class="toc-number">1.</span> <span class="toc-text">相量与综合矢量</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#双馈电机数学模型"><span class="toc-number">2.</span> <span class="toc-text">双馈电机数学模型</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#相量与综合矢量"><span class="toc-number">1.</span> <span class="toc-text">相量与综合矢量</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#相量（Phaser）："><span class="toc-number">1.1.</span> <span class="toc-text">相量（Phaser）：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#综合矢量-1-："><span class="toc-number">1.2.</span> <span class="toc-text">综合矢量[^1]：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#双馈电机数学模型"><span class="toc-number">2.</span> <span class="toc-text">双馈电机数学模型</span></a></li></ol>
  
   </div>
 
