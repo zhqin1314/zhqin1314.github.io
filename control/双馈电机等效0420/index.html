@@ -11,19 +11,19 @@
     
 
     
-    <meta name="description" content="电路系统中......">
+    <meta name="description" content="双馈电机等效、坐标变换、双馈电机连接组别">
 <meta name="keywords">
 <meta property="og:type" content="article">
 <meta property="og:title" content="双馈电机等效">
 <meta property="og:url" content="http://yoursite.com/control/双馈电机等效0420/index.html">
 <meta property="og:site_name" content="zhqin1314的个人博客">
-<meta property="og:description" content="电路系统中......">
+<meta property="og:description" content="双馈电机等效、坐标变换、双馈电机连接组别">
 <meta property="og:image" content="http://op0u1jywe.bkt.clouddn.com/%E5%8F%8C%E9%A6%88%E7%94%B5%E6%9C%BA%E7%AD%89%E6%95%88/DFIG_%E5%9D%90%E6%A0%87%E5%8F%98%E6%8D%A2t0.gif">
 <meta property="og:image" content="http://op0u1jywe.bkt.clouddn.com/%E5%8F%8C%E9%A6%88%E7%94%B5%E6%9C%BA%E7%AD%89%E6%95%88/DFIG_%E5%9D%90%E6%A0%87%E5%8F%98%E6%8D%A23.gif">
-<meta property="og:updated_time" content="2017-08-05T01:50:51.994Z">
+<meta property="og:updated_time" content="2017-08-05T11:24:57.540Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="双馈电机等效">
-<meta name="twitter:description" content="电路系统中......">
+<meta name="twitter:description" content="双馈电机等效、坐标变换、双馈电机连接组别">
 <meta name="twitter:image" content="http://op0u1jywe.bkt.clouddn.com/%E5%8F%8C%E9%A6%88%E7%94%B5%E6%9C%BA%E7%AD%89%E6%95%88/DFIG_%E5%9D%90%E6%A0%87%E5%8F%98%E6%8D%A2t0.gif">
 
     
@@ -107,6 +107,8 @@
 		
 		<script type="text/javascript" src="F:\zq\blog\MathJax/MathJax.js"></script>
 
+<p>双馈电机等效、坐标变换、双馈电机连接组别</p>
+<a id="more"></a>
 <h1 id="相量与综合矢量"><a href="#相量与综合矢量" class="headerlink" title="相量与综合矢量"></a>相量与综合矢量</h1><p>电路系统中，<font color="#0099ff"><strong>相量</strong></font>和<font color="#0099ff"><strong>综合矢量</strong></font>的引入都是为了简化电路计算或者控制。然而相量、综合矢量是两个截然不同的概念，它们各有其特定的适用范围，概念不清很容易导致使用混乱。</p>
 <h2 id="相量（Phaser）："><a href="#相量（Phaser）：" class="headerlink" title="相量（Phaser）："></a>相量（Phaser）：</h2><p>用一个称为相量的复数表示<strong>正弦量</strong>，相量由正弦量的振幅$I$(有效值)和初相$\varphi$构成，复数的模表示正弦量的振幅，其幅角表示初相：$i=\sqrt{2}I\cos(\omega t+\varphi)=\mathrm{Re}(\sqrt{2}I\mathrm{e}^{\mathrm{j}(\omega t+\varphi)})=\mathrm{Re}(\sqrt{2}\dot{I}\mathrm{e}^{\mathrm{j}\omega t}) \iff \dot{I}=I\mathrm{e}^{\mathrm{j}\varphi}$</p>
 <p>分析正弦稳态的有效方法，将描述正弦稳态电路的微分（积分）方程变换成复数代数方程，从而简化了电路的分析和计算：$\frac{\mathrm{d}i}{\mathrm{d}t} \iff \mathrm{j}\omega\dot{I}=I\mathrm{e}^{\mathrm{j}(\varphi+\frac{\pi}{2})}$ ，$\int i\,\mathrm{d}t \iff  \frac{\dot{I}}{\mathrm{j}\omega}=\frac{I}{\omega}\mathrm{e}^{\text{j}(\varphi-\frac{\pi}{2})}$ </p>
